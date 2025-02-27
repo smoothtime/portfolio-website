@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Playground Form</title>
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="./style.css">
+</head>
+
+<body>
+  <nav class="checkout-header">
+    <h1>
+      <img class="header-logo" src="https://btholt.github.io/complete-intro-to-web-dev-v3/images/coffee_masters_logo.png"/>
+      Playground Form
+    </h1>
+  </nav>
+  
+  <div class="order-body">
+    <section class="order-boxes">
+      <div class="box items">
+        <h2 class="box-name">Items</h2>
+        <ul class="items-list">
+          <li class="item-entry">
+            <p class="item-count">1x</p>
+            <div class="item-breakdown">
+              <p class="item-name">Cappuccino</p>
+              <ul class="item-specs">
+                <li>Lite foam</li>
+              </ul>
+            </div>
+            <p class="item-total">$3.35</p>
+            
+            
+          </li>
+
+          <li class="item-entry">
+            <p class="item-count">1x</p>
+            <div class="item-breakdown">
+              <p class="item-name">Cappuccino</p>
+              <ul class="item-specs">
+                <li>Lite milk</li>
+                <li>Double espresso</li>
+              </ul>
+            </div>
+            <p class="item-total">$3.85</p>
+          </li>
+        
+          <li class="item-entry">
+            <p class="item-count">1x</p>
+            <div class="item-breakdown">
+              <p class="item-name">Croissant</p>
+              <ul class="item-specs">
+                <li>Butter</li>
+              </ul>
+            </div>
+            <p class="item-total">$2.45</p>
+          </li>
+        </ul>
+      </div>
+      
+      <div class="forms">
+        <form class="box">
+          <h2 class="box-name">Name</h2>
+          <div class="input-group">
+            <label for="name-input" class="input-label">Name for order</label>
+            <input id="name-input" type="text" class="form-input" placeholder=""></input>
+          </div>
+        </form>
+        
+        <form class="payment-form box">
+          <h2 class="box-name">Payment</h2>
+          <div class="input-group">
+            <label for="card-input" class="input-label">Card Number</label>
+            <input id="card-input" type="text" class="form-input"></input>
+          </div>
+          <div class="input-group">
+            <label for="ccv-input" class="input-label">CCV Number</label>
+            <input id="ccv-input" type="text" class="form-input short-input" />
+          </div>
+        </form>
+      </div>
+    </section>
+    
+    <section class="order-summary">
+      <table class="totals-table">
+        <tbody>
+          <tr>
+            <td>Subtotal:</td>
+            <td>$9.64</td>
+          </tr>
+          <tr>
+            <td>Tax</td>
+            <td>$0.82</td>
+          </tr>
+          <tr class="order-total">
+            <td>Total:</td>
+            <td>$10.47</td>
+          </tr>
+          
+        </tbody>
+      </table>
+    </section>
+    <button class="order-button">Place order</button>
+  </div>
+</body>
